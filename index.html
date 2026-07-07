@@ -1,11 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagina web programação</title>
+<style>
+     header{
+      background-color: rgb(59, 59, 59);
+      color:rgb(255, 255, 255);
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+      border: 5px solid #302929;
+      padding: 16px;
+    }
+     main{
+      background-color: rgb(59, 59, 59);
+      color:rgb(255, 255, 255);
+      max-width: 1600px;
+      margin: 0 auto;
+      border: 5px solid #302929;
+      padding: 32px;
+      display:block;
+     }
+     img{
+          width: 720px;
+          height: 330px;
+          border: 5px solid #553939;
+     }
+     p{
+          font-weight: 100;
+     }
+     .artigo-autor{
+          font-weight: bold;
+     }
+     
+
+</style>
 </head>
 <body>
+ <header>
+ <h1>Programação de web</h1>
+ <p>Bom dia! bem vindo ao meu site de aprendendo programação.</p>
+ </header>
+   <main>
+     <p class="artigo-autor">Por: Kauan Jaques Vieira.</p>
+     <p>Aqui aprenderemos a programar e saberemos mais propriedades da tecnologia.</p>
+     <img src="/home/escola/Imagens/codificacao-de-programas-de-computador-no-ecra_53876-138060.avif" alt="imagem apresentando linguagem 
+de computador e programação.">
+    <div>
+          <h2 class="titulo-explicação-artigo">Oque é a programação?</h2>
+          <p class="explicação-artigo">Programação é o processo de criação de um conjunto de instruções lógicas
+      que orientam um computador a realizar tarefas específicas. 
+    Também pode se referir ao ato de planejar uma sequência de eventos, atividades ou 
+    a grade de horários de canais de televisão e entretenimento.</p>
     
+    </div> 
+    <div2>
+     <h3>Quais programas que usaremos para programar.</h3>
+     <p>As linguagens de programação mais utilizadas pelos programadores atualmente incluem ferramentas poderosas e versáteis.
+           As principais são:Python:
+            Líder em popularidade, é muito usada em inteligência artificial, análise de dados e automação devido à sua sintaxe simples e limpa.
+            JavaScript: Essencial para a internet. Domina o desenvolvimento web (front-end), permitindo criar sites e aplicações interativas.
+            Java: Muito robusta e focada em sistemas de grande porte, é a principal linguagem para o desenvolvimento de aplicativos Android.
+            C e C++: Focadas em performance e controle de hardware. São a base para sistemas operacionais, motores de jogos e softwares pesados.
+            ]C#: Desenvolvida pela Microsoft, é muito utilizada na criação de jogos (usando a engine Unity) e em sistemas corporativos.</p>
+            <button class="coração">❤️ <span>0</span></button>
+            <button class="joinha">👍 <span>0</span></button>
+      <img src="https://kinsta.com/wp-content/uploads/2021/03/the-most-popular-programming-languages-to-learn.png" 
+      alt="Imagem mostrando os progamadores que estão descritos em cima." gap="">        
+    </div2> 
+   </main>
 </body>
+<script>
+     const botoes = document.querySelectorAll("button");
+
+     botoes.forEach( function(botao){
+     botao.addEventListener("click", botaoClicado);
+
+     function botaoClicado(){
+          console.log("foi clicado");
+          let texto = botao.querySelector("span");
+          texto.textContent++;
+       } 
+     })
+</script>
 </html>
